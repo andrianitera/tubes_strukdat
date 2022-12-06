@@ -1,5 +1,5 @@
 #
-#PROGRAM PENCARIAN RUTE KOTA PULAU JAWA DENGAN BFS DAN DFS
+#PROGRAM PENCARIAN RUTE KOTA PULAU SUMATERA DENGAN BFS 
 #(sebagai tugas untuk ujian akhir semester mata kuliah kecerdasan buatan)
 
 #RECODING BY : GALIH AP, M.ILHAM IHSANUDIN, KHOIRUL UMAM
@@ -198,7 +198,8 @@ jawa={#Banten
       'Banyuwangi':set(['Jember','Situbondo'])
       }
       
-sumatra={#Lampung
+sumatra={
+    #Lampung
     'Lampung Barat':set(['Pesisir Barat', 'Tanggamus', 'Lampung Tengah', 'Lampung Utara','Way Kanan']),
     'Lampung Selatan':set(['Bandar Lampung', 'Pesawaran', 'Lampung Timur', 'Lampung Tengah']),
     'Lampung Tengah':set(['Lampung Timur','Metro','Lampung Selatan','Pesawaran','Pringsewu','Tanggamus','Lampung Barat','Laampung Utara','Tulang Bawang Barat','Tulang Bawang']),
@@ -213,7 +214,38 @@ sumatra={#Lampung
     'Tulang Bawang Barat':set(['Mesuji','Tulang Bawang','Lampung Tengah','Lampung Utara','Way Kanan']),
     'Way Kanan':set(['Tulang Bawang Barat','Lampung Utara','Lampung Barat']),
     'Bandar Lampung':set(['Lampung Selatan','Pesawaran']),
-    'Metro':set(['Lampung Timur', 'Lampung Tengah'])}
+    'Metro':set(['Lampung Timur', 'Lampung Tengah']),
+    #
+    #Kepulauan Bangka Belitung
+    'Bangka Barat':set(['Bangka']),
+    'Bangka':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Pangkal Pinang':set(['Bangka','Bangka Tengah']),
+    'Bangka Tengah':set(['Bangka','Pangkal Pinang','Bangka Selatan']),
+    'Bangka Selatan':set([='Bangka Tengah','Belitung']),
+    'Belitung':set(['Bangka Selatan','Belitung Timur']),
+    'Belitung Timur':set(['Belitung']),
+    #
+    #Sumatera Selatan
+    'Banyuasin':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Empat Lawang':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Lahat':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Muara Enim':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Musi Banyuasin':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Musi Rawas':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Musi Rawas Utara':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Ogan Ilir':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Ogan Komering Ilir':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Ogan Komering Ulu':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Ogan Komering Ulu Selatan':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Ogan Komering Ulu Timur':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Abab Lematang Ilir':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Lubuklinggau':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Pagar Alam':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Palembang':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    'Prabumulih':set(['Bangka Barat','Pangkal Pinang','Bangka Tengah']),
+    #
+    #
+    }
 
 #CODINGAN BAGIAN DARI BFS
 def bfs(sumatera, mulai, tujuan):
