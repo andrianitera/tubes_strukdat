@@ -108,7 +108,7 @@ sumatra={
     'Pariaman':set(['']),
     'Payakumbuh':set(['']),
     'Sawahlunto':set(['Sijunjung','']),
-    'Solok':set(['Pesisir Selatan','Solok Selatan','Kota Padang','']),
+    'Kota Solok':set(['Pesisir Selatan','Solok Selatan','Kota Padang','']),
     }
 
 #CODINGAN BAGIAN DARI BFS
@@ -141,4 +141,5 @@ def bfs(sumatera, mulai, tujuan):
 def add(sumatera, key, value):
     sumatera[key] = value
 
-bfs(sumatra, 'Lampung Tengah', 'Lampung Selatan')
+rute = bfs(sumatra, 'Way Kanan', 'Lampung Selatan')
+print(rute)
