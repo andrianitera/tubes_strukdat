@@ -2,8 +2,8 @@
 #PROGRAM PENCARIAN RUTE KOTA PULAU SUMATERA DENGAN BFS 
 #(sebagai tugas untuk ujian akhir semester mata kuliah kecerdasan buatan)
 
-#RECODING BY : GALIH AP, M.ILHAM IHSANUDIN, KHOIRUL UMAM
-#SOURCE : OPEN SOURCE (GITHUB, WEB, ETC)
+#Kelompok 9 :
+#Husni Na'fa Mubarok
 #TYPESETTER : GALIH AP 
 #
 #
