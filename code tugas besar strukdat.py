@@ -1,12 +1,12 @@
 #
 #PROGRAM PENCARIAN RUTE KOTA PULAU SUMATERA DENGAN BFS 
-#(sebagai tugas untuk ujian akhir semester mata kuliah kecerdasan buatan)
 
 #Kelompok 9 :
-#Husni Na'fa Mubarok
-#TYPESETTER : GALIH AP 
-#
-#
+#Husni Na'fa Mubarok 121450078
+#Andrian Agustinus Lumban Gaol 121450090
+#Dimas Rizky Ramdhani 121450027
+#Catherine Firdasari Maulina Sinaga 121450072
+#Nadia Sillvani 121450054
 
 #DATABASE RUTE    
 sumatra={
