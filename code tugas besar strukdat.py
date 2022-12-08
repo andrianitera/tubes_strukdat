@@ -11,19 +11,19 @@
 #DATABASE RUTE    
 sumatra={
     #Lampung
-    'Lampung Barat':set(['Pesisir Barat', 'Tanggamus', 'Lampung Tengah', 'Lampung Utara','Way Kanan']),
+    'Lampung Barat':set(['Pesisir Barat', 'Tanggamus', 'Lampung Tengah', 'Lampung Utara','Way Kanan','Ogan Komering Ulu Selatan']),
     'Lampung Selatan':set(['Bandar Lampung', 'Pesawaran', 'Lampung Timur', 'Lampung Tengah']),
     'Lampung Tengah':set(['Lampung Timur','Metro','Lampung Selatan','Pesawaran','Pringsewu','Tanggamus','Lampung Barat','Laampung Utara','Tulang Bawang Barat','Tulang Bawang']),
     'Lampung Timur':set(['Lampung Selatan','Metro','Lampung Tengah','Tulang Bawang']),
     'Lampung Utara':set(['Lampung Tengah','Lampung Barat','Way Kanan','Tulang Bawang Barat']),
-    'Mesuji':set(['Tulang Bawang','Tulang Bawang Barat']),
+    'Mesuji':set(['Tulang Bawang','Tulang Bawang Barat','Ogan Komering Ilir']),
     'Pesawaran':set(['Bandar Lampung','Lampung Tengah','Pringsewu','Tanggamus']),
-    'Pesisir Barat':set(['Lampung Barat','Tanggamus']),
+    'Pesisir Barat':set(['Lampung Barat','Tanggamus','Ogan Komering Ulu Selatan','Kaur']),
     'Pringsewu':set(['Pesawaran','Lampung Tengah','Tanggamus',]),
     'Tanggamus':set(['Lampung Tengah','Lampung Barat','Pringsewu','Pesawaran','Pesisir Barat']),
     'Tulang Bawang':set(['Lampung Timur','Mesuji','Tulang Bawang Barat','Lampung Tengah']),
-    'Tulang Bawang Barat':set(['Mesuji','Tulang Bawang','Lampung Tengah','Lampung Utara','Way Kanan']),
-    'Way Kanan':set(['Tulang Bawang Barat','Lampung Utara','Lampung Barat']),
+    'Tulang Bawang Barat':set(['Mesuji','Tulang Bawang','Lampung Tengah','Lampung Utara','Way Kanan','Ogan Komering Ilir']),
+    'Way Kanan':set(['Tulang Bawang Barat','Lampung Utara','Lampung Barat','Ogan Komering Ilir','Ogan Komering Ulu Timur','Ogan Komering Ulu Selatan']),
     'Bandar Lampung':set(['Lampung Selatan','Pesawaran']),
     'Metro':set(['Lampung Timur', 'Lampung Tengah']),
     #
@@ -67,14 +67,14 @@ sumatra={
     'Seluma':set(['']),
     'Bengkulu':set(['']),
     #Jambi
-    'Muaro Jambi':set(['Tanjung Jabung Timur', 'Batanghari', 'Tanjung Jabung Barat']),
-    'Tanjung Jabung Timur':set(['Tanjung Jabung Barat', 'Muaro Jambi']),
-    'Batanghari':set(['Muaro Jambi', 'Sarolangun', 'Tanjung Jabung Barat', 'Tebo']),
+    'Muaro Jambi':set(['Tanjung Jabung Timur', 'Batanghari', 'Tanjung Jabung Barat','Banyuasin','Musi Banyuasin']),
+    'Tanjung Jabung Timur':set(['Tanjung Jabung Barat', 'Muaro Jambi','Banyuasin']),
+    'Batanghari':set(['Muaro Jambi', 'Sarolangun', 'Tanjung Jabung Barat', 'Tebo','Musi Banyuasin']),
     'Tanjung Jabung Barat':set(['Tanjung Jabung Timur','Muaro Jambi','Batanghari','Tebo']),
     'Tebo':set(['Batanghari','Tanjung Jabung Barat','Bungo','Merangin','Sarolangun']),
     'Bungo':set(['Tebo','Merangin','Kerinci']),
     'Merangin':set(['Kerinci','Bungo','Sarolangun','Tebo']),
-    'Sarolangun':set(['Batanghari','Merangin','Tebo']),
+    'Sarolangun':set(['Batanghari','Merangin','Tebo','Musi Rawas Utara','Musi Banyuasin']),
     'Kerinci':set(['Bungo', 'Merangin']),
     #Riau
     'Indragiri Hilir':set(['Indragiri Hulu', 'Pelalauan']),
@@ -140,6 +140,9 @@ def bfs(sumatera, mulai, tujuan):
 
 def add(sumatera, key, value):
     sumatera[key] = value
+
+def delete_item(sumatera, key):
+    sumatera.pop(key)
 
 rute = bfs(sumatra, 'Way Kanan', 'Lampung Selatan')
 print(rute)
